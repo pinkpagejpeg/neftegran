@@ -1,0 +1,58 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+.header {
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu_item {
+        list-style-type: none;
+        margin-right: 60px;
+    }
+
+    &__menu_item:nth-last-child(1) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: $light_gray;
+        font-family: "Bona Nova";
+        letter-spacing: 0.8px;
+        font-weight: 400;
+        font-size: 16px;
+        transition: all .3s linear;
+        padding: 0 10px;
+    }
+}
+
+.header__link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $beige;
+    transition: all .3s ease;
+}
+
+.header__link:hover {
+    color: $beige;
+}
+
+.header__link:hover::after {
+    width: 100%;
+}
+
+.header__link:disabled {
+    color: $light_gray;
+    cursor: default;
+}
+
+.header__link:active::after {
+    width: 0%;
+}

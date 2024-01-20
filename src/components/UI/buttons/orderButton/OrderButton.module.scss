@@ -1,0 +1,15 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+$dark_gray: #181818;
+
+.order_button {
+    border-radius: 40px;
+    background: $beige;
+    color: $dark_gray;
+    font-family: 'Bona Nova';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../styles/mixins";
+@include section_title;
+
+.news {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    &__mainbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    &__imagebox {
+        border: 1px solid $beige;
+        padding: 17px;
+    }
+}
+

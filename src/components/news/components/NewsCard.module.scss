@@ -1,0 +1,35 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../../styles/mixins";
+@include card_title;
+@include main_text;
+
+.news_card {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 33%;
+        align-items: center;
+    }
+
+    &__wrapper > h4::after {
+        content: "";
+        display: block;
+        width: 270px;
+        height: 18px;
+        background-image: url('../../../assets/images/paragraph_separator.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 12px 0 12px 0;
+    }
+
+    &__wrapper > p {
+        margin-bottom: 42px;
+    }
+
+    &__wrapper > button {
+        padding: 12px 130px;
+    }
+}

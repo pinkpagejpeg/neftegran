@@ -1,0 +1,43 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@mixin main_text {
+    .main_text {
+        color: $light_gray;
+        text-align: center;
+        font-family: 'Bona Nova';
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@mixin section_title {
+    .section_title {
+        color: $beige;
+        text-align: center;
+        font-family: 'Forum';
+        font-size: 60px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+}
+
+@mixin card_title {
+    .card_title {
+        color: $beige;
+        text-align: center;
+        font-family: 'Forum';
+        font-size: 24px;
+        font-weight: 300;
+    }
+}
+
+@mixin subtitle {
+    .subtitle {
+        color: $light_gray;
+        text-align: center;
+        font-family: 'Forum';
+        font-size: 36px;
+        font-weight: 400;
+    }
+}

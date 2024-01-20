@@ -1,0 +1,41 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../../../styles/mixins";
+@include card_title;
+@include main_text;
+
+.services_card {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        border: 2px solid $beige;
+        padding: 18px 20px 38px 20px;
+    }
+
+    &__wrapper > h4 {
+        margin-top: 20px;
+    }
+
+    &__wrapper > h4::after {
+        content: "";
+        display: block;
+        width: 330px;
+        height: 22px;
+        background-image: url('../../../../assets/images/paragraph_separator.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 10px 0;
+    }
+
+    &__wrapper > p {
+        margin-bottom: 24px;
+    }
+
+    &__wrapper > button {
+        padding: 12px 120px;
+    }
+}

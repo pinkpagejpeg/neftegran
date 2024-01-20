@@ -1,0 +1,83 @@
+$light_gray: #BFBFBF;
+$gray: #696969;
+$beige: #E3B573;
+
+@import "../../styles/mixins";
+@include main_text;
+
+.hero {
+    &__wrapper {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 400px;
+    }
+
+    &__infobox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 60%;
+        margin-top: 160px;
+    }
+
+    &__infobox > p {
+        color: $gray;
+        max-width: 90%;
+        margin-top: -40px;
+    }
+
+    &__image {
+        position: absolute;
+        margin-right: 660px;
+    }
+
+    &__title {
+        color: $light_gray;
+        font-family: 'Forum';
+        font-size: 72px;
+        font-weight: 300;
+    }
+
+    &__title > span {
+        color: $beige;
+    }
+
+    &__title::before {
+        content: "";
+        display: inline-block;
+        width: 600px;
+        height: 41px;
+        background-image: url('../../assets/images/hero_title_up.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 118px;
+    }
+
+    &__title::after {
+        content: "";
+        display: inline-block;
+        width: 600px;
+        height: 2px;
+        background-image: url('../../assets/images/hero_title_bottom.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-bottom: 40px;
+        margin-left: 118px;
+    }
+
+    &__text {
+        color: $gray;
+        text-align: center;
+        font-family: 'Bona Nova';
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+    }
+
+    &__scroll {
+        position: absolute;
+        margin: 685px 680px 0 0;
+    }
+}

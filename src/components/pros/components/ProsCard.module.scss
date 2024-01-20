@@ -1,0 +1,37 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../../styles/mixins";
+@include main_text;
+@include card_title;
+
+.pros_card {
+    &__wrapper {
+        max-width: 27%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &__icon {
+        margin-bottom: 30px;
+    }
+
+    &__wrapper > h4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper > h4::after {
+        content: "";
+        display: inline-block;
+        width: 170px;
+        height: 2px;
+        background-image: url('../../../assets/images/hero_title_bottom.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 10px 0 8px 0;
+    }
+}

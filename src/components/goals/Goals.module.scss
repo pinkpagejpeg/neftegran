@@ -1,0 +1,46 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../styles/mixins";
+@include section_title;
+
+.goals {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        max-width: 84%;
+    } 
+
+    &__cards > div:nth-child(2)::after {
+        content: "";
+        display: inline-block;
+        width: 176px;
+        height: 24px;
+        background-image: url('../../assets/images/cards_separator.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        margin: 50px 0 0 426px;
+    }
+
+    &__cards > div:nth-child(2)::before {
+        content: "";
+        display: inline-block;
+        width: 176px;
+        height: 24px;
+        background-image: url('../../assets/images/cards_separator.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        margin: 50px 426px 0 0;
+    }
+}

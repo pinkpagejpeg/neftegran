@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+	min-height: 100vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: linear-gradient(39deg, #1B1B1B 12.12%, #0D0D0D 78.21%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}

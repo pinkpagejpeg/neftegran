@@ -1,0 +1,50 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../../../styles/mixins";
+@include card_title;
+@include main_text;
+
+.products_card {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 22%;
+        align-items: center;
+        border: 2px solid $beige;
+        padding: 38px 20px 40px 20px;
+    }
+
+    &__wrapper > h4 {
+        margin-top: 20px;
+    }
+
+    &__wrapper > h4::after {
+        content: "";
+        display: block;
+        width: 255px;
+        height: 18px;
+        background-image: url('../../../../assets/images/paragraph_separator.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 10px 0 14px 0;
+    }
+
+    &__wrapper > p {
+        margin-bottom: 14px;
+    }
+
+    &__price {
+        color: $beige;
+        text-align: center;
+        font-family: "Bona Nova";
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    &__wrapper > button {
+        padding: 12px 112px;
+    }
+}
