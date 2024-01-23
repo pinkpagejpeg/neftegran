@@ -1,0 +1,71 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../../../styles/mixins";
+@include subtitle;
+
+.news {
+    &__slaider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__slaider_main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    &__mainbox {
+        width: 471px;
+        height: 292px;
+        overflow: hidden;
+        margin: 0 19px;
+    }
+
+    &__line {
+        width: 1413px;
+        height: 292px;
+        display: flex;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+
+    &__buttons {
+        cursor: pointer;
+    }
+
+    &__slaider_nav {
+        display: flex;
+    }
+
+    &__slaider_nav_btn {
+        padding: 6px;
+        border: 1px $beige solid;
+        margin: 0 6px;
+    }
+
+    &__icon {
+        fill: none;
+        stroke-width: 4;
+        stroke: $beige;
+        stroke-linecap: round;
+        transition: all .3s linear;
+    }
+}
+
+// .services__icon:hover {
+//     stroke: $orange;
+// }
+
+// .services__icon:active {
+//     stroke: $yellow;
+// }
+
+// .services__icon:disabled {
+//     stroke: $gray;
+// }

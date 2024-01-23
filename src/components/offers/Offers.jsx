@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Offers.module.scss'
-import OffersServices from './components/services/OffersServices';
-import OffersProducts from './components/products/OffersProducts';
+import OffersServices from './components/offersServices/OffersServices';
+import OffersProducts from './components/offersProducts/OffersProducts';
 
 const Offers = () => {
     return ( 

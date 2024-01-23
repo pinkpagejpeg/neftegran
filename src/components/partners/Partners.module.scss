@@ -1,0 +1,37 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../styles/mixins";
+@include section_title;
+
+.partners {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 60px 0;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-bottom: 40px;
+    }
+
+    &__logo:nth-child(2),
+    &__logo:nth-child(7) {
+       margin: 0 308px 40px 308px;
+    }
+
+    &__logo:nth-child(4) {
+        margin: 0 154px 40px 290px;
+     }
+
+     &__logo:nth-child(5) {
+        margin: 0 290px 40px 154px;
+     }
+}

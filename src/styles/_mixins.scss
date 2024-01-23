@@ -41,3 +41,31 @@ $beige: #E3B573;
         font-weight: 400;
     }
 }
+
+@mixin form_input {
+    .form_input {
+        height: 33px;
+        border: none;
+        border-bottom: 2px solid #E3B573;
+        background: transparent;
+        color: #BFBFBF;
+        font-family: 'Bona Nova';
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@mixin form_submit {
+    .form_submit {
+        border-radius: 40px;
+        background: #E3B573;
+        color: #181818;
+        font-family: 'Bona Nova';
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        padding: 12px 110px;
+        border: none;
+        cursor: pointer;
+    }
+}

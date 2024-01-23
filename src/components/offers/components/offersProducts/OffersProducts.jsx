@@ -102,7 +102,6 @@ const OffersProducts = () => {
                     <a className={classes.products__slaider_nav_btn}></a>
                 </div>
             </div>
-
         </div>
     );
 }

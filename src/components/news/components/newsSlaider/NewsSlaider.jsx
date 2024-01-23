@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import classes from './NewsSlaider.module.scss'
-import NewsCard from './NewsCard';
+import NewsCard from '../newsCard/NewsCard';
 
 const NewsSlaider = () => {
     const [offset, setOffset] = useState(0);

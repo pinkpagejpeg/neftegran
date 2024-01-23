@@ -1,0 +1,54 @@
+$light_gray: #BFBFBF;
+$beige: #E3B573;
+
+@import "../../../../styles/mixins";
+@include main_text;
+@include card_title;
+
+.contacts_card {
+    &__wrapper {
+        border: 2px solid $beige;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 33%;
+    }
+
+    &__icon {
+        max-width: 90px;
+        margin-bottom: 30px;
+    }
+
+    &__infobox {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 30.74%;
+        margin: 30px 0 40px 0;
+    }
+
+    &__wrapper > h4{
+        color: $light_gray;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    &__wrapper > h4::after{
+        content: "";
+        width: 120px;
+        height: 2px;
+        background-image: url('../../../../assets/images/title_bottom.svg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center center;
+        margin: 6px 0 0 0;
+    }
+
+    &__wrapper > button {
+        padding: 12px 58px;
+    }
+}

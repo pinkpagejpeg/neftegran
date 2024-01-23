@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './ProductsCard.module.scss'
-import OrderButton from '../../buttons/orderButton/OrderButton';
+import MainButton from '../../buttons/mainButton/MainButton';
 
 const ProductsCard = (props) => {
     return ( 
@@ -9,7 +9,7 @@ const ProductsCard = (props) => {
             <h4 className={classes.card_title}>{props.product.title}</h4>
             <p className={classes.main_text}>{props.product.info}</p>
             <span className={classes.products_card__price}>{props.product.price} руб.</span>
-            <OrderButton >Заказать</OrderButton>
+            <MainButton>Заказать</MainButton>
         </div>
      );
 }
