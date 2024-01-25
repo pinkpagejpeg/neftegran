@@ -7,8 +7,8 @@ const ProductsServices = () => {
         <>
             <div className='container'>
                 <Header />
+                <Catalog />
             </div>
-            <Catalog />
             <Footer />
         </>
     );

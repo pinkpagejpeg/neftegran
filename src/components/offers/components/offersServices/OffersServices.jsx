@@ -7,13 +7,13 @@ const OffersServices = () => {
     const [offset, setOffset] = useState(0);
 
     const goPrev = () => {
-        let newOffset = offset - 1234;
+        let newOffset = offset - 1232;
         if (newOffset < 0) newOffset = 3684;
         setOffset(newOffset);
     }
 
     const goNext = () => {
-        let newOffset = offset + 1234;
+        let newOffset = offset + 1232;
         if (newOffset > 3684) newOffset = 0;
         setOffset(newOffset);
     }

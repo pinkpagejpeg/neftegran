@@ -1,0 +1,91 @@
+$light_gray: #BFBFBF;
+$dark_gray: #1B1B1B;
+$beige: #E3B573;
+
+@import "../../../../styles/mixins";
+@include subtitle;
+@include form_input;
+@include form_submit;
+@include main_text;
+
+.orderModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.orderModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.order_form {
+    &__modal_content {
+        padding: 20px 20px 60px 60px;
+        background: $dark_gray;
+    }
+
+    &__modal_content > h3 {
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    &__close_wrapper {
+        display: flex;
+        justify-content: end;
+        margin: 0 0 20px 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 18px 40px 0 0;
+    }
+
+    &__form > input[type="text"],
+    &__form > input[type="tel"],
+    &__form > input[type="email"] {
+        width: 466px;
+    }
+
+    &__form > input[type="text"],
+    &__form > input[type="tel"] {
+        margin-bottom: 27px;
+    }
+
+    &__form > p {
+        font-size: 14px;
+        margin: 6px 0 24px 0;
+    }
+
+    &__form > input[type="submit"] {
+        transition: all .3s linear;
+    }
+
+    // &__form > input[type="submit"]:hover {
+    //     background: $orange;
+    // }
+    
+    // &__form > input[type="submit"]:disabled {
+    //     background: $gray;
+    //     color: $light_gray;
+    //     cursor: default;
+    // }
+    
+    // &__form > input[type="submit"]:enabled:active {
+    //     background: $lemon_yellow;
+    // }
+}
+
+.button_close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

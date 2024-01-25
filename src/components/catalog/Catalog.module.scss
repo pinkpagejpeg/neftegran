@@ -3,3 +3,9 @@ $beige: #E3B573;
 
 @import "../../styles/mixins";
 @include section_title;
+
+.catalog {
+    &__wrapper {
+        padding: 0 83px;
+    }
+}
