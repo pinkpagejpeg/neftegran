@@ -20,7 +20,7 @@ $beige: #E3B573;
     }
 
     &__mainbox {
-        width: 471px;
+        width: 470px;
         height: 292px;
         overflow: hidden;
         margin: 0 19px;
@@ -50,11 +50,34 @@ $beige: #E3B573;
     }
 
     &__icon {
+        width: 29px; 
+        height: 42px;
         fill: none;
         stroke-width: 4;
         stroke: $beige;
         stroke-linecap: round;
         transition: all .3s linear;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .news {
+        &__slaider_main {
+            margin-bottom: 0;
+        }
+
+        &__mainbox {
+            margin: 0 11px;
+        }
+
+        &__icon {
+            max-height: 36px;
+        }
+
+        &__slaider_nav_btn {
+            padding: 4px;
+            margin: 0 4px;
+        }
     }
 }
 

@@ -56,3 +56,21 @@ $beige: #E3B573;
     //     color: $lemon_yellow;
     // }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .feedback{    
+        &__form {
+            margin-top: 14px;
+        }
+    
+        &__form > input[type="text"],
+        &__form > input[type="tel"],
+        &__form > input[type="email"] {
+            margin-bottom: 20px;
+        }
+    
+        &__form > p {
+            font-size: 12px;
+        }
+    }
+}

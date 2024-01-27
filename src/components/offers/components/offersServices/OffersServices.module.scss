@@ -58,11 +58,46 @@ $beige: #E3B573;
     }
 
     &__icon {
+        width: 29px; 
+        height: 42px;
         fill: none;
         stroke-width: 4;
         stroke: $beige;
         stroke-linecap: round;
         transition: all .3s linear;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .services {   
+        &__slaider {
+            margin-top: 18px;
+        }
+    
+        &__slaider_main {
+            max-width: 91%;
+            margin-bottom: 20px;
+        }
+    
+        &__mainbox {
+            width: 520px;
+            height: 354px;
+            margin: 0 11px;
+        }
+    
+        &__line {
+            width: 3684px;
+            height: 354px;
+        }
+    
+        &__slaider_nav_btn {
+            padding: 4px;
+            margin: 0 4px;
+        }
+    
+        &__icon {
+            max-height: 36px;
+        }
     }
 }
 

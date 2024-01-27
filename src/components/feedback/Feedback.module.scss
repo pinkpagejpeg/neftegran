@@ -24,3 +24,15 @@ $beige: #E3B573;
         padding: 17px;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .feedback {
+        &__wrapper {
+            margin-bottom: 80px;
+        }
+
+        &__imagebox {
+            display: none;
+        }
+    }
+}

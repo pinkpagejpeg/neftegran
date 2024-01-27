@@ -15,3 +15,15 @@
         max-width: 34px;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .header {
+        &__wrapper {
+            padding: 20px 0;
+        }
+
+        &__logo {
+            max-width: 24px;
+        }
+    }
+}

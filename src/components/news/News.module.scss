@@ -24,3 +24,20 @@ $beige: #E3B573;
     }
 }
 
+@media (min-width: 624px) and (max-width: 769px) {
+    .news {
+        &__wrapper {
+            margin-bottom: 80px;
+        }
+    
+        &__mainbox {
+            justify-content: space-around;
+            padding: 0;
+        }
+    
+        &__imagebox {
+            display: none;
+        }
+    }
+}
+

@@ -18,20 +18,38 @@ $beige: #E3B573;
         margin-bottom: 30px;
     }
 
-    &__wrapper > h4 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__wrapper > h4::after {
+    &__wrapper>h4::after {
         content: "";
-        display: inline-block;
+        display: block;
         width: 170px;
         height: 2px;
-        background-image: url('../../../assets/images/hero_title_bottom.svg');
+        background-image: url('../../../../assets/images/hero_title_bottom.svg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
         margin: 10px 0 8px 0;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .pros_card {
+        &__wrapper {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__icon {
+            margin-bottom: 24px;
+            height: 36%;
+        }
+
+        &__wrapper > h4::after {
+            width: 140px;
+            margin: 8px 0 6px 0;
+        }
+
+        &__wrapper > p {
+            max-width: 70%;
+        }
     }
 }

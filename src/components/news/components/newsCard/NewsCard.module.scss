@@ -18,7 +18,7 @@ $beige: #E3B573;
         display: block;
         width: 270px;
         height: 18px;
-        background-image: url('../../../assets/images/paragraph_separator.svg');
+        background-image: url('../../../../assets/images/paragraph_separator.svg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
@@ -31,5 +31,23 @@ $beige: #E3B573;
 
     &__wrapper > button {
         padding: 12px 130px;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .news_card {   
+        &__wrapper > h4::after {
+            width: 230px;
+            height: 15px;
+            margin: 10px 0 10px 0;
+        }
+    
+        &__wrapper > p {
+            margin-bottom: 32px;
+        }
+    
+        &__wrapper > button {
+            padding: 12px 130px;
+        }
     }
 }

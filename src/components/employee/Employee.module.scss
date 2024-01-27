@@ -8,7 +8,7 @@ $beige: #E3B573;
     &__wrapper {
         display: flex;
         flex-direction: column;
-        margin: 0 0 100px 0;
+        margin: 0 0 70px 0;
     }
 
     &__cards {
@@ -16,5 +16,17 @@ $beige: #E3B573;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .employee {
+        &__wrapper {
+            margin: 0 0 40px 0;
+        }
+
+        &__cards {
+            justify-content: space-around;
+        }
     }
 }

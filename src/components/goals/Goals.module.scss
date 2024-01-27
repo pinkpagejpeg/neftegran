@@ -16,9 +16,9 @@ $beige: #E3B573;
         display: flex;
         justify-content: space-between;
         max-width: 84%;
-    } 
+    }
 
-    &__cards > div:nth-child(2)::after {
+    &__cards>div:nth-child(2)::after {
         content: "";
         display: inline-block;
         width: 176px;
@@ -31,7 +31,7 @@ $beige: #E3B573;
         margin: 50px 0 0 426px;
     }
 
-    &__cards > div:nth-child(2)::before {
+    &__cards>div:nth-child(2)::before {
         content: "";
         display: inline-block;
         width: 176px;
@@ -42,5 +42,26 @@ $beige: #E3B573;
         background-position: center center;
         position: absolute;
         margin: 50px 426px 0 0;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .goals {
+        &__wrapper {
+            margin-bottom: 40px;
+        }
+
+        &__cards {
+            max-width: 100%;
+            flex-direction: column;
+        }
+
+        &__cards>div:nth-child(2)::after {
+            display: none;
+        }
+
+        &__cards>div:nth-child(2)::before {
+            display: none;
+        }
     }
 }

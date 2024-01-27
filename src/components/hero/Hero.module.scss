@@ -34,7 +34,7 @@ $beige: #E3B573;
     &__title {
         color: $light_gray;
         font-family: 'Forum';
-        font-size: 72px;
+        font-size: 70px;
         font-weight: 300;
     }
 
@@ -81,3 +81,50 @@ $beige: #E3B573;
         margin: 685px 680px 0 0;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .hero {
+        &__wrapper {
+            justify-content: center;
+            margin-bottom: 320px;
+        }
+    
+        &__infobox {
+            max-width: 90%;
+            margin-top: 140px;
+        }
+    
+        &__infobox > p {
+            max-width: 100%;
+        }
+    
+        &__image {
+            display: none;
+        }
+    
+        &__title {
+            font-size: 45px;
+        }
+    
+        &__title::before {
+            width: 540px;
+            height: 31px;
+            margin-left: 0;
+        }
+    
+        &__title::after {
+            width: 440px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    
+        &__text {
+            font-size: 14px;
+        }
+    
+        &__scroll {
+            max-width: 36px;
+            margin: 565px 0 0 0;
+        }
+    }
+  }

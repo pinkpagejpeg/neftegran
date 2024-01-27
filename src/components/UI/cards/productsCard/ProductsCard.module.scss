@@ -15,11 +15,11 @@ $beige: #E3B573;
         padding: 38px 20px 40px 20px;
     }
 
-    &__wrapper > h4 {
+    &__wrapper>h4 {
         margin-top: 20px;
     }
 
-    &__wrapper > h4::after {
+    &__wrapper>h4::after {
         content: "";
         display: block;
         width: 255px;
@@ -31,7 +31,7 @@ $beige: #E3B573;
         margin: 10px 0 14px 0;
     }
 
-    &__wrapper > p {
+    &__wrapper>p {
         margin-bottom: 14px;
     }
 
@@ -44,7 +44,43 @@ $beige: #E3B573;
         margin-bottom: 24px;
     }
 
-    &__wrapper > button {
+    &__wrapper>button {
         padding: 12px 112px;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .products_card {
+        &__wrapper {
+            max-width: 352px;
+            padding: 20px 12px 20px 12px;
+        }
+
+        &__wrapper>h4 {
+            margin-top: 20px;
+        }
+
+        &__wrapper>h4::after {
+            width: 230px;
+            height: 15px;
+            margin: 10px 0 0 0;
+        }
+
+        &__wrapper>p {
+            margin-bottom: 14px;
+            max-width: 96%;
+        }
+
+        &__price {
+            font-size: 20px;
+        }
+
+        &__wrapper>button {
+            padding: 12px 112px;
+        }
+
+        &__wrapper>img {
+            max-width: 44%;
+        }
     }
 }

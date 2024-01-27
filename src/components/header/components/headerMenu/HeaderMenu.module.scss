@@ -8,6 +8,8 @@ $beige: #E3B573;
     }
 
     &__menu_item {
+        display: flex;
+        align-items: center;
         list-style-type: none;
         margin-right: 60px;
     }
@@ -55,4 +57,22 @@ $beige: #E3B573;
 
 .header__link:active::after {
     width: 0%;
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .header {
+        &__menu_item {
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        &__menu_item:nth-last-child(1) {
+            margin-right: 20px;
+        }
+
+        &__link {
+            font-size: 14px;
+            padding: 0 8px;
+        }
+    }
 }

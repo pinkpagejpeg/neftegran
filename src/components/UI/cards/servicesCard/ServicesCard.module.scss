@@ -39,3 +39,30 @@ $beige: #E3B573;
         padding: 12px 120px;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .services_card {
+        &__wrapper {
+            max-width: 435px;
+            padding: 10px 14px 19px 14px;
+        }
+
+        &__wrapper > img {
+            max-width: 435px;
+        }
+    
+        &__wrapper > h4::after {
+            width: 230px;
+            height: 15px;
+            margin: 10px 0 0 0;
+        }
+    
+        &__wrapper > p {
+            margin-bottom: 24px;
+        }
+    
+        &__wrapper > button {
+            padding: 12px 120px;
+        }
+    }
+}

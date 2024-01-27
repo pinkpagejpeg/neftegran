@@ -35,3 +35,23 @@ $beige: #E3B573;
         margin: 0 290px 40px 154px;
      }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .partners {
+        &__wrapper {
+            margin: 0 0 40px 0;
+            padding: 0 20px;
+        }
+    
+        &__logo {
+            max-width: 210px;
+        }
+    
+        &__logo:nth-child(2),
+        &__logo:nth-child(7),
+        &__logo:nth-child(4),
+        &__logo:nth-child(5) {
+           margin: 0 0 40px 0;
+        }
+    }
+}

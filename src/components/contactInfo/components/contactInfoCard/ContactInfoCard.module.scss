@@ -29,7 +29,7 @@ $beige: #E3B573;
         margin: 30px 0 40px 0;
     }
 
-    &__wrapper > h4{
+    &__wrapper>h4 {
         color: $light_gray;
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@ $beige: #E3B573;
         justify-content: start;
     }
 
-    &__wrapper > h4::after{
+    &__wrapper>h4::after {
         content: "";
         width: 120px;
         height: 2px;
@@ -48,7 +48,35 @@ $beige: #E3B573;
         margin: 6px 0 0 0;
     }
 
-    &__wrapper > button {
+    &__wrapper>button {
         padding: 12px 58px;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .contacts_card {
+        &__wrapper {
+            padding: 32px 24px;
+            width: 7.9%;
+        }
+
+        &__icon {
+            max-width: 60px;
+            margin-bottom: 24px;
+        }
+
+        &__infobox {
+            height: 30.74%;
+            margin: 18px 0 32px 0;
+        }
+
+        &__wrapper>h4::after {
+            width: 100px;
+            margin: 4px 0 0 0;
+        }
+
+        &__wrapper>button {
+            padding: 12px 58px;
+        }
     }
 }

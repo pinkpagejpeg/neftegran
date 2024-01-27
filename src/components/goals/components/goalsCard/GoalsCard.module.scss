@@ -30,14 +30,9 @@ $beige: #E3B573;
         font-weight: 300;
     }
 
-    &__wrapper > h4 {
-        display: flex;
-        flex-direction: column;
-    }
-
     &__wrapper > h4::after {
         content: "";
-        display: inline-block;
+        display: block;
         width: 170px;
         height: 2px;
         background-image: url('../../../../assets/images/hero_title_bottom.svg');
@@ -47,3 +42,32 @@ $beige: #E3B573;
         margin: 10px 0 8px 0;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .goals_card {
+        &__wrapper {
+            max-width: 100%;
+            justify-content: space-between;
+        }
+    
+        &__numberbox {
+            width: 80px;
+            padding: 21px 0 22px 0;
+            margin-bottom: 24px;
+        }
+    
+        &__number {
+            font-size: 38px;
+        }
+    
+        &__wrapper > h4::after {
+            width: 140px;
+            margin: 8px 0 6px 0;
+        }
+
+        &__wrapper > p {
+           margin-bottom: 40px;
+           max-width: 70%;
+        }
+    }
+  }

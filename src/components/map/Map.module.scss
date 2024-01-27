@@ -24,3 +24,17 @@ $beige: #E3B573;
         height: 100%;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .map {
+        &__wrapper {
+            margin: 0 0 80px 0;
+        }
+    
+        &__mapbox {
+            width: 520px;
+            height: 520px;
+            padding: 10px;
+        }
+    }
+}

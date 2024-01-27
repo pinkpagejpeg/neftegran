@@ -13,3 +13,9 @@ $dark_gray: #181818;
     border: none;
     cursor: pointer;
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .main_button {
+        font-size: 16px;
+    }
+}

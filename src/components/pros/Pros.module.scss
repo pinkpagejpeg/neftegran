@@ -17,9 +17,9 @@ $beige: #E3B573;
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 84%;
-    } 
+    }
 
-    &__cards > div:nth-child(2)::after {
+    &__cards>div:nth-child(2)::after {
         content: "";
         display: inline-block;
         width: 176px;
@@ -32,7 +32,7 @@ $beige: #E3B573;
         margin: 50px 0 0 426px;
     }
 
-    &__cards > div:nth-child(2)::before {
+    &__cards>div:nth-child(2)::before {
         content: "";
         display: inline-block;
         width: 176px;
@@ -45,11 +45,11 @@ $beige: #E3B573;
         margin: 50px 426px 0 0;
     }
 
-    &__cards > div:nth-child(4) {
+    &__cards>div:nth-child(4) {
         margin-left: 214px;
     }
 
-    &__cards > div:nth-child(4)::after {
+    &__cards>div:nth-child(4)::after {
         content: "";
         display: inline-block;
         width: 176px;
@@ -62,11 +62,47 @@ $beige: #E3B573;
         margin: 40px 0 0 426px;
     }
 
-    &__cards > div:nth-child(5) {
+    &__cards>div:nth-child(5) {
         margin: 9px 214px 0 0;
     }
 
-    &__cards > div:nth-child(5) > img {
+    &__cards>div:nth-child(5)>img {
         margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .pros {
+        &__wrapper {
+            margin-bottom: 40px;
+        }
+
+        &__cards {
+            max-width: 100%;
+        }
+
+        &__cards>div:nth-child(2)::after {
+            display: none;
+        }
+
+        &__cards>div:nth-child(2)::before {
+            display: none;
+        }
+
+        &__cards>div:nth-child(4) {
+            margin-left: 0;
+        }
+
+        &__cards>div:nth-child(4)::after {
+            display: none;
+        }
+
+        &__cards>div:nth-child(5) {
+            margin: 0;
+        }
+
+        &__cards>div:nth-child(5)>img {
+            margin-bottom: 30px;
+        }
     }
 }

@@ -23,3 +23,19 @@ $beige: #E3B573;
         margin-bottom: 40px ;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .products {
+        &__wrapper {
+            margin-bottom: 40px;
+        }
+    
+        &__cards {
+            margin-top: 20px;
+        }
+    
+        &__cards > div:not(:nth-child(even)) {
+            margin-bottom: 40px ;
+        }
+    }
+}

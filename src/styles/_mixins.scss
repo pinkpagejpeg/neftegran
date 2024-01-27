@@ -9,6 +9,12 @@ $beige: #E3B573;
         font-size: 16px;
         font-weight: 400;
     }
+
+    @media (min-width: 624px) and (max-width: 769px) {
+        .main_text {
+            font-size: 14px;
+        }
+    }
 }
 
 @mixin section_title {
@@ -20,6 +26,13 @@ $beige: #E3B573;
         font-weight: 300;
         margin-bottom: 40px;
     }
+
+    @media (min-width: 624px) and (max-width: 769px) {
+        .section_title {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @mixin card_title {
@@ -30,6 +43,13 @@ $beige: #E3B573;
         font-size: 24px;
         font-weight: 300;
     }
+
+    @media (min-width: 624px) and (max-width: 769px) {
+        .card_title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @mixin subtitle {
@@ -39,6 +59,12 @@ $beige: #E3B573;
         font-family: 'Forum';
         font-size: 36px;
         font-weight: 400;
+    }
+
+    @media (min-width: 624px) and (max-width: 769px) {
+        .subtitle {
+            font-size: 28px;
+        }
     }
 }
 

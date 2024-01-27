@@ -14,7 +14,7 @@ $beige: #E3B573;
         margin-bottom: 100px;
     }
 
-    &__wrapper > p {
+    &__wrapper>p {
         width: 90%;
     }
 
@@ -53,5 +53,30 @@ $beige: #E3B573;
         font-weight: 400;
         margin-top: 20px;
         transition: max-height 0.3s ease-out;
+    }
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .faq {
+        &__wrapper {
+            padding: 0;
+            margin-bottom: 80px;
+        }
+
+        &__infobox {
+            margin-top: 32px;
+        }
+
+        &__infobox_item {
+            padding: 20px 0;
+        }
+
+        &__question {
+            font-size: 24px;
+        }
+
+        &__answer {
+            font-size: 14px;
+        }
     }
 }

@@ -34,6 +34,7 @@ $beige: #E3B573;
     &__modal_content > h3 {
         text-align: center;
         margin-right: 40px;
+        color: $beige;
     }
 
     &__close_wrapper {
@@ -88,4 +89,33 @@ $beige: #E3B573;
     background: transparent;
     border: none;
     cursor: pointer;
+}
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .order_form {
+        &__modal_content {
+            padding: 20px 20px 40px 40px;
+        }
+    
+        &__modal_content > h3 {
+            margin-right: 20px;
+        }
+    
+        &__close_wrapper {
+            margin: 0;
+        }
+    
+        &__form {
+            margin: 14px 20px 0 0;
+        }
+    
+        &__form > input[type="text"],
+        &__form > input[type="tel"] {
+            margin-bottom: 20px;
+        }
+    
+        &__form > p {
+            font-size: 12px;
+        }
+    }
 }

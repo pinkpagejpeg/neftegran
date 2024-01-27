@@ -23,6 +23,12 @@ $beige: #E3B573;
         max-width: 39%;
     }
 
+    &__infobox > p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__infobox > p:after {
         content: "";
         display: inline-block;
@@ -44,3 +50,44 @@ $beige: #E3B573;
         padding: 17px;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .about {
+        &__wrapper {
+            margin-bottom: 80px;
+        }
+    
+        &__mainbox {
+            flex-direction: column;
+            padding: 0;
+        }
+    
+        &__infobox {
+            max-width: 100%;
+        }
+
+        &__infobox > p {
+            text-align: center;
+        }
+
+        &__infobox > p:nth-last-child(1) {
+            margin-bottom: 24px;
+        }
+    
+        &__infobox > p:after {
+            width: 230px;
+            height: 15px;
+            margin: 18px 0;
+        }
+    
+        &__imagebox {
+            border: 1px solid $beige;
+            padding: 10px;
+            max-width: 95%;
+        }
+
+        &__imagebox > img {
+            max-width: 100%;
+        }
+    }
+  }

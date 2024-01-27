@@ -13,3 +13,12 @@ $beige: #E3B573;
         padding: 0 40px;
     }
 }
+
+@media (min-width: 624px) and (max-width: 769px) {
+    .offers {
+        &__wrapper {
+            margin-bottom: 80px;
+            padding: 0;
+        }
+    }
+}
