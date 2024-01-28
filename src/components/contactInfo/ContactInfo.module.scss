@@ -119,3 +119,40 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .contacts {
+        &__wrapper {
+            margin-bottom: 60px;
+        }
+
+        &__slaider_main {
+            max-width: 91%;
+            margin-bottom: 20px;
+        }
+
+        &__mainbox {
+            width: 344px;
+            height: 365px;
+            margin: 0 10px;
+        }
+
+        &__line {
+            width: 3684px;
+            height: 365px;
+        }
+
+        &__line>div:nth-child(3n+2) {
+            margin: 0;
+        }
+
+        &__slaider_nav_btn {
+            padding: 4px;
+            margin: 0 4px;
+        }
+
+        &__icon {
+            max-height: 30px;
+        }
+    }
+}

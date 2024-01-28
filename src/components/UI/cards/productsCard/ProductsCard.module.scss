@@ -84,3 +84,40 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .products_card {
+        &__wrapper {
+            max-width: 330px;
+            height: fit-content;
+            padding: 16px 12px 20px 12px;
+        }
+
+        &__wrapper>h4 {
+            margin-top: 20px;
+        }
+
+        &__wrapper>h4::after {
+            width: 180px;
+            height: 14px;
+            margin: 10px 0 0 0;
+        }
+
+        &__wrapper>p {
+            margin-bottom: 14px;
+            max-width: 96%;
+        }
+
+        &__price {
+            font-size: 18px;
+        }
+
+        &__wrapper>button {
+            padding: 12px 106px;
+        }
+
+        &__wrapper>img {
+            max-width: 38%;
+        }
+    }
+}

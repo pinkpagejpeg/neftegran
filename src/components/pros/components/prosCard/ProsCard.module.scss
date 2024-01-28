@@ -53,3 +53,27 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .pros_card {
+        &__wrapper {
+            max-width: 100%;
+            height: fit-content;
+            margin-bottom: 32px;
+        }
+
+        &__icon {
+            margin-bottom: 12px;
+            height: 60px;
+        }
+
+        &__wrapper > h4::after {
+            width: 120px;
+            margin: 6px 0 4px 0;
+        }
+
+        &__wrapper > p {
+            max-width: 70%;
+        }
+    }
+}

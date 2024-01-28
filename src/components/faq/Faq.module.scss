@@ -80,3 +80,28 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .faq {
+        &__wrapper {
+            padding: 0;
+            margin-bottom: 60px;
+        }
+
+        &__infobox {
+            margin-top: 28px;
+        }
+
+        &__infobox_item {
+            padding: 20px 0;
+        }
+
+        &__question {
+            font-size: 20px;
+        }
+
+        &__answer {
+            font-size: 12px;
+        }
+    }
+}

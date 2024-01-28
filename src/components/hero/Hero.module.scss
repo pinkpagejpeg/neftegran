@@ -127,4 +127,51 @@ $beige: #E3B573;
             margin: 565px 0 0 0;
         }
     }
-  }
+}
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .hero {
+        &__wrapper {
+            justify-content: center;
+            margin-bottom: 284px;
+        }
+    
+        &__infobox {
+            max-width: 90%;
+            margin-top: 120px;
+        }
+    
+        &__infobox > p {
+            max-width: 88%;
+        }
+    
+        &__image {
+            display: none;
+        }
+    
+        &__title {
+            font-size: 34px;
+        }
+    
+        &__title::before {
+            width: 400px;
+            height: 26px;
+            margin-left: 0;
+        }
+    
+        &__title::after {
+            width: 380px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+    
+        &__text {
+            font-size: 12px;
+        }
+    
+        &__scroll {
+            max-width: 30px;
+            margin: 526px 0 0 0;
+        }
+    }
+}

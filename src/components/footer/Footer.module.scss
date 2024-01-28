@@ -115,3 +115,46 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .footer {
+        &__container {
+            max-width: 420px;
+            padding: 20px 0 40px 0;
+        }
+
+        &__logo {
+            max-width: 20px;
+        }
+
+        &__logo_name {
+            font-size: 20px;
+            margin-left: 8px;
+        }
+
+        &__container>p {
+            max-width: 360px;
+            margin: 12px 0 20px 0;
+        }
+
+        &__dockbox {
+            margin: 0 0 20px 0;
+        }
+
+        &__dock {
+            font-size: 10px;
+        }
+
+        &__dock:nth-child(2) {
+            margin: 0 14px;
+        }
+
+        &__social_link:nth-child(2) {
+            margin: 0 12px;
+        }
+
+        &__social_logo {
+            width: 28px;
+        }
+    }
+}

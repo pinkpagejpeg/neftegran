@@ -19,3 +19,9 @@ $dark_gray: #181818;
         font-size: 16px;
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .main_button {
+        font-size: 14px;
+    }
+}

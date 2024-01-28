@@ -74,3 +74,35 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .feedback{    
+        &__form {
+            margin-top: 8px;
+        }
+    
+        &__form > input[type="text"],
+        &__form > input[type="tel"],
+        &__form > input[type="email"] {
+            margin-bottom: 14px;
+        }
+
+        &__form>input[type="text"],
+        &__form>input[type="tel"],
+        &__form>input[type="email"] {
+            width: 320px;
+        }
+
+        &__form > textarea {
+            width: 320px;
+        }
+
+        &__form > textarea::placeholder {
+            padding-top: 8px;
+        }
+    
+        &__form > p {
+            font-size: 10px;
+        }
+    }
+}

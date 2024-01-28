@@ -112,3 +112,36 @@ $beige: #E3B573;
 // .services__icon:disabled {
 //     stroke: $gray;
 // }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .services {   
+        &__slaider {
+            margin-top: 12px;
+        }
+    
+        &__slaider_main {
+            max-width: 91%;
+            margin-bottom: 20px;
+        }
+    
+        &__mainbox {
+            width: 400px;
+            height: 332px;
+            margin: 0 10px;
+        }
+    
+        &__line {
+            width: 3684px;
+            height: 332px;
+        }
+    
+        &__slaider_nav_btn {
+            padding: 4px;
+            margin: 0 4px;
+        }
+    
+        &__icon {
+            max-height: 30px;
+        }
+    }
+}

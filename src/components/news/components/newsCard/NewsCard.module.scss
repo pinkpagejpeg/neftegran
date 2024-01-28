@@ -51,3 +51,25 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .news_card { 
+        &__wrapper {
+            width: 24%;
+        }
+
+        &__wrapper > h4::after {
+            width: 180px;
+            height: 14px;
+            margin: 8px 0 0 0;
+        }
+    
+        &__wrapper > p {
+            margin-bottom: 24px;
+        }
+    
+        &__wrapper > button {
+            padding: 12px 120px;
+        }
+    }
+}

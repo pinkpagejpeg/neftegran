@@ -30,3 +30,15 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .employee {
+        &__wrapper {
+            margin: 0 0 20px 0;
+        }
+
+        &__cards {
+            justify-content: space-around;
+        }
+    }
+}

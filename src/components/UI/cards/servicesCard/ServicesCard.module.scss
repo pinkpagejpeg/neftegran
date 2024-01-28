@@ -66,3 +66,35 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .services_card {
+        &__wrapper {
+            height: fit-content;
+            max-width: 334px;
+            padding: 10px 10px 30px 10px;
+        }
+
+        &__wrapper > img {
+            max-width: 334px;
+        }
+
+        &__wrapper > h4 {
+            margin-top: 14px;
+        }
+    
+        &__wrapper > h4::after {
+            width: 180px;
+            height: 14px;
+            margin: 10px 0 0 0;
+        }
+    
+        &__wrapper > p {
+            margin-bottom: 24px;
+        }
+    
+        &__wrapper > button {
+            padding: 12px 110px;
+        }
+    }
+}

@@ -15,6 +15,12 @@ $beige: #E3B573;
             font-size: 14px;
         }
     }
+
+    @media (min-width: 480px) and (max-width: 624px) {
+        .main_text {
+            font-size: 12px;
+        }
+    }
 }
 
 @mixin section_title {
@@ -31,6 +37,13 @@ $beige: #E3B573;
         .section_title {
             font-size: 40px;
             margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: 480px) and (max-width: 624px) {
+        .section_title {
+            font-size: 28px;
+            margin-bottom: 16px;
         }
     }
 }
@@ -50,6 +63,13 @@ $beige: #E3B573;
             margin-bottom: 10px;
         }
     }
+
+    @media (min-width: 480px) and (max-width: 624px) {
+        .card_title {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+    }
 }
 
 @mixin subtitle {
@@ -66,6 +86,12 @@ $beige: #E3B573;
             font-size: 28px;
         }
     }
+
+    @media (min-width: 480px) and (max-width: 624px) {
+        .subtitle {
+            font-size: 20px;
+        }
+    }
 }
 
 @mixin form_input {
@@ -78,6 +104,13 @@ $beige: #E3B573;
         font-family: 'Bona Nova';
         font-size: 16px;
         font-weight: 400;
+    }
+
+    @media (min-width: 480px) and (max-width: 624px) {
+        .form_input {
+            height: 28px;
+            font-size: 12px;
+        }
     }
 }
 
@@ -93,5 +126,12 @@ $beige: #E3B573;
         padding: 12px 110px;
         border: none;
         cursor: pointer;
+    }
+
+    @media (min-width: 480px) and (max-width: 624px) {
+        .form_submit {
+            padding: 12px 90px;
+            font-size: 14px;
+        }
     }
 }

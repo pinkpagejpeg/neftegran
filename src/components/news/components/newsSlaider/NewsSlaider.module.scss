@@ -50,7 +50,7 @@ $beige: #E3B573;
     }
 
     &__icon {
-        width: 29px; 
+        width: 29px;
         height: 42px;
         fill: none;
         stroke-width: 4;
@@ -92,3 +92,26 @@ $beige: #E3B573;
 // .services__icon:disabled {
 //     stroke: $gray;
 // }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .news {
+        &__slaider_main {
+            margin-bottom: 0;
+        }
+
+        &__mainbox {
+            margin: 0 10px;
+            width: 338px;
+            height: 234px;
+        }
+
+        &__icon {
+            max-height: 30px;
+        }
+
+        &__slaider_nav_btn {
+            padding: 4px;
+            margin: 0 4px;
+        }
+    }
+}

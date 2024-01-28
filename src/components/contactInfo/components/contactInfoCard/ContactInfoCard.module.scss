@@ -80,3 +80,31 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .contacts_card {
+        &__wrapper {
+            padding: 32px 24px;
+            width: 6.9%;
+        }
+
+        &__icon {
+            max-width: 60px;
+            margin-bottom: 24px;
+        }
+
+        &__infobox {
+            height: 30.74%;
+            margin: 18px 0 32px 0;
+        }
+
+        &__wrapper>h4::after {
+            width: 100px;
+            margin: 4px 0 0 0;
+        }
+
+        &__wrapper>button {
+            padding: 12px 48px;
+        }
+    }
+}

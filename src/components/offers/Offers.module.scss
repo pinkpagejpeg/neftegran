@@ -22,3 +22,12 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .offers {
+        &__wrapper {
+            margin-bottom: 60px;
+            padding: 0;
+        }
+    }
+}

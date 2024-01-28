@@ -40,3 +40,18 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .employee_card {
+        &__wrapper {
+            max-width: 60%;
+            margin: 0 0 40px 0;
+            padding: 10px 12px 16px 12px;
+        }
+    
+        &__name {
+            font-size: 14px;
+            margin: 10px 0 4px 0;
+        }
+    }
+}

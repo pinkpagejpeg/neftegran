@@ -36,3 +36,19 @@ $beige: #E3B573;
         }
     }
 }
+
+@media (min-width: 480px) and (max-width: 624px) {
+    .feedback {
+        &__wrapper {
+            margin-bottom: 60px;
+        }
+
+        &__mainbox {
+            padding: 0 50px;
+        }
+
+        &__imagebox {
+            display: none;
+        }
+    }
+}
